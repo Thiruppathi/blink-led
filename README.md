@@ -36,6 +36,23 @@ Open http://localhost:9000
 
 Click on the Bulb in  your screen. This triggers a toggle action through port 9000 at Arduino LED. Whenever toggle action is triggered at this port LED's state is changed to ON/OFF.
 
+## Play From REPL
+
+REPL - Read Evaluate Print Loop
+
+```
+>> on() // will turn on the LED
+```
+
+
+```
+>> off() // will turn off the LED
+```
+
+
+```
+>> toggle() // will toggle the current status of the LED
+```
 
 ## Acknowldgements
 Thanks to the team [NodeBots of London](http://www.meetup.com/NodeBots-of-London/) for introducing the cool stuff.
