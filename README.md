@@ -10,29 +10,32 @@ This is a simple demo page uses jQuery, CSS for Showing the LED on Browser scree
 
 ## How To Install
 
-Check out the project. 
+Check out the project.
 
-## How To Play
+```
+npm install
+```
 
-Open the blink.html
-
-Click on the Bulb in  your screen. This triggers a toggle action through port 8080 at Arduino LED.
-
-
-### Arduino - Jhonny Five Implementation
-
-
-````
-node 01-blink-blink.js
-````
-
-This runs an express js server at node and listens to the port 8080. Wheneve toggle action is triggered at this port LED's state is changed to ON/OFF.
-
-
-Credit http://johnny-five.io/examples/
+## Connect your Arduino
 
 ![fritzing](http://johnny-five.io/img/breadboard/led-13.png)
 
+As per the above diagram connect LED to 13 and GND.
+
+Connect the arduino to your system through USB.
+
+## How To Play
+
+````
+node 02-blink-from-web.js
+````
+
+This runs an express js server at node and listens to the port 9000.
+
+Open http://localhost:9000
+
+Click on the Bulb in  your screen. This triggers a toggle action through port 9000 at Arduino LED. Whenever toggle action is triggered at this port LED's state is changed to ON/OFF.
 
 
-
+## Acknowldgements
+Thanks to the team [NodeBots of London](http://www.meetup.com/NodeBots-of-London/) for introducing the cool stuff.
